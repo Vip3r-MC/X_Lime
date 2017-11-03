@@ -2,7 +2,7 @@
 from termcolor import colored
 text_1 = colored('--', 'green', attrs=['bold'])
 
-print("================================================")
+print colored('================================================', 'red', attrs=['bold'])
 print colored(' ##:::: ##: ##::::::: ####: ##:::: ##: ########:', 'green', attrs=['bold'])
 print colored('. ##:: ##:: ##:::::::. ##:: ###:: ###: ##.....::', 'green', attrs=['bold'])
 print colored(':. ## ##::: ##:::::::: ##:: #### ####: ##:::::::', 'green', attrs=['bold'])
@@ -11,7 +11,7 @@ print colored(':: ## ##::: ##:::::::: ##:: ##. #: ##: ##...::::', 'green', attrs
 print colored(': ##:. ##:: ##:::::::: ##:: ##:.:: ##: ##:::::::', 'green', attrs=['bold'])
 print colored(' ##:::. ##: ########: ####: ##:::: ##: ########:', 'green', attrs=['bold'])
 print colored('..:::::..::........::....::..:::::..::........::', 'green', attrs=['bold'])
-print('===================='), colored('X_LIME', 'blue', attrs=['bold']), ('====================')
+print colored('====================', 'red', attrs=['bold']), colored('X_LIME', 'blue', attrs=['bold']), colored('====================', 'red', attrs=['bold'])
 print colored('SELECT AN OPTION TO BEGIN: ', 'white')
 print '\033[1;37m[\033[1;m''\033[1;32m1\033[1;m''\033[1;37m]\033[1;m'
 print '\033[1;37m[\033[1;m''\033[1;32m2\033[1;m''\033[1;37m]\033[1;m'
