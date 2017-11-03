@@ -1,6 +1,5 @@
-# X_Lime
-Python script for kali linux used to make hacking much more easier.
-This is the first beta.
+# X_Lime 0.1
+Python script for kali linux.
 
 ====================Installation====================
 1.chmod +X X_Lime.py
