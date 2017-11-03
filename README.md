@@ -6,5 +6,3 @@ Python script for kali linux.
 2.Launch the program with:X_Lime.py
 
 send feedback on gmail:vipercipher0@gmail.com
-
-
