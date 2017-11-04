@@ -4,13 +4,15 @@ import os
 import subprocess
 import shutil
 import sys
+import time 
+import progressbar
+
 from termcolor import colored
 from termcolor import cprint
 from colorama import init
 from pyfiglet import figlet_format
+
 init(strip=not sys.stdout.isatty())
-
-
 
 x1 = '\033[1;32m1\033[1;m'
 x2 = '\033[1;32m2\033[1;m'
@@ -25,15 +27,35 @@ d_sign1 = '\033[1;37m: \033[1;m'
 d_sign2 = '\033[1;37m[\033[1;m''\033[1;31mXX\033[1;m''\033[1;37m]\033[1;m'
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
+clear = lambda: os.system('cls')
 
 c_dir_path = colored(dir_path, 'red', attrs=['bold'])
 apk_directory = colored('Move the apk file to this dircetory ', 'green', attrs=['bold']) 
 apk_enter = colored('Enter the name of the apk ⬎', 'green', attrs=['bold'])
 
-
 def cls():
 	os.system('cls' if os.name=='nt' else 'clear')
 pass
+
+def hacking():
+    print colored('            ======================================================            ', 'green', attrs=['bold'])	
+    print colored('            ██╗  ██╗ █████╗  ██████╗██╗  ██╗██╗███╗   ██╗ ██████╗             ', 'red', attrs=['bold'])
+    print colored('            ██║  ██║██╔══██╗██╔════╝██║ ██╔╝██║████╗  ██║██╔════╝             ', 'red', attrs=['bold'])
+    print colored('            ███████║███████║██║     █████╔╝ ██║██╔██╗ ██║██║  ███╗            ', 'red', attrs=['bold'])
+    print colored('            ██╔══██║██╔══██║██║     ██╔═██╗ ██║██║╚██╗██║██║   ██║            ', 'red', attrs=['bold'])
+    print colored('            ██║  ██║██║  ██║╚██████╗██║  ██╗██║██║ ╚████║╚██████╔╝            ', 'red', attrs=['bold'])
+    print colored('            ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝             ', 'red', attrs=['bold'])
+    print colored('            ======================================================            ', 'green', attrs=['bold'])
+pass
+
+cls()
+hacking()
+def Loading():
+	with progressbar.ProgressBar(max_value=30) as bar:
+		for i in range(30):
+			time.sleep(0.1)
+			bar.update(i)
+	pass
 
 def c_print(s):
 	os_size = int(subprocess.check_output(['stty', 'size']).split()[1])
@@ -63,7 +85,9 @@ def space():
 	print("")
 pass
 
-clear = lambda: os.system('cls')
+Loading()
+
+cls()
 print colored('================================================', 'red', attrs=['bold'])
 print colored(' ##:::: ##: ##::::::: ####: ##:::: ##: ########:', 'green', attrs=['bold'])
 print colored('. ##:: ##:: ##:::::::. ##:: ###:: ###: ##.....::', 'green', attrs=['bold'])
