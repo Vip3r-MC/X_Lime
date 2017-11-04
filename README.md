@@ -1,12 +1,18 @@
 # X_Lime 0.1
 Python script for kali linux.
 
-====================Installation===================                                                                           
-1.Make sure to install termcolor                                                                                               
-2.chmod +x X_Lime.py                                                                                                           
-3.start the program with: ./X_Lime.py
-                                                                         
-sudo apt-get update                                                                                                           
-sudo apt-get install python-termcolor                                                                                         
+<h4>====================Installation===================</h4>                                          
+<ul>
 
-send feedback on gmail:vipercipher0@gmail.com
+  <li>1.Make sure to install termcolor</li>
+  <li>2.chmod +x X_Lime.py</li>
+  <li>3.start the program with: ./X_Lime.py</li>
+</ul>
+<h4>======================Install======================</h4>                                
+<li><p1>sudo apt-get update</p1></li>                                            
+<li><p1>sudo apt-get install python-termcolor</p1></li>
+<li><p1>pip install pyfiglet</p1></li>
+<li><p1>pip install termcolor</p1></li>
+<li><p1>pip install colorama</p1></li>
+
+<p1>send feedback on gmail:vipercipher0@gmail.com</p1>
