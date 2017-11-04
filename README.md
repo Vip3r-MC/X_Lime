@@ -3,10 +3,8 @@ Python script for kali linux.
 
 <h4>====================Installation===================</h4>                                          
 <ul>
-
-  <li>1.Make sure to install termcolor</li>
-  <li>2.chmod +x X_Lime.py</li>
-  <li>3.start the program with: ./X_Lime.py</li>
+  <li>1.chmod +x X_Lime.py</li>
+  <li>2.start the program with: ./X_Lime.py</li>
 </ul>
 <h4>======================Install======================</h4>                                
 <li><p1>sudo apt-get update</p1></li>                                            
