@@ -12,5 +12,6 @@ Python script for kali linux.
 <li><p1>pip install pyfiglet</p1></li>
 <li><p1>pip install termcolor</p1></li>
 <li><p1>pip install colorama</p1></li>
+<li><p1>pip install progressbar2</p1></li>
 
 <p1>send feedback on gmail:vipercipher0@gmail.com</p1>
