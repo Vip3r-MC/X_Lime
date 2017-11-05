@@ -8,7 +8,8 @@
   <li>2.start the program with: ./X_Lime.py</li>
 </ul>
 <h4>======================Install======================</h4>                                
-<li><p1>sudo apt-get update</p1></li>                                            
+<li><p1>sudo apt-get update</p1></li>
+<li><p1>apt-get install apktool</p1></li>
 <li><p1>sudo apt-get install python-termcolor</p1></li>
 <li><p1>pip install pyfiglet</p1></li>
 <li><p1>pip install termcolor</p1></li>
