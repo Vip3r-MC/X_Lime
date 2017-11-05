@@ -26,12 +26,14 @@ d_sign = '\033[1;37m[\033[1;m''\033[1;32m--\033[1;m''\033[1;37m]\033[1;m'
 d_sign1 = '\033[1;37m: \033[1;m'
 d_sign2 = '\033[1;37m[\033[1;m''\033[1;31mXX\033[1;m''\033[1;37m]\033[1;m'
 
+#Choice 1 apk
 dir_path = os.path.dirname(os.path.realpath(__file__))
-clear = lambda: os.system('cls')
-
 c_dir_path = colored(dir_path, 'red', attrs=['bold'])
-apk_directory = colored('Move the apk file to this dircetory ', 'green', attrs=['bold']) 
+apk_directory = colored('Move the apk file to this dircetory and Enter the name of the apk', 'green', attrs=['bold'])
+alone = colored('(alone)', 'red', attrs=['bold']) 
 apk_enter = colored('Enter the name of the apk ⬎', 'green', attrs=['bold'])
+choose_directory = colored('Enter the apk dircetory ⬎ ', 'green', attrs=['bold'])
+clear = lambda: os.system('cls')
 
 def cls():
 	os.system('cls' if os.name=='nt' else 'clear')
@@ -50,17 +52,16 @@ pass
 
 cls()
 hacking()
-def Loading():
-	with progressbar.ProgressBar(max_value=30) as bar:
-		for i in range(30):
-			time.sleep(0.1)
-			bar.update(i)
-	pass
 
 def c_print(s):
 	os_size = int(subprocess.check_output(['stty', 'size']).split()[1])
 pass
 
+def space():
+	print("")
+pass
+
+cls()
 def derp():
     print("          ─────────▄▄───────────────────▄▄──")
     print("          ──────────▀█───────────────────▀█─")
@@ -81,31 +82,40 @@ def derp():
     print("          ──────────────────────────────────")
 pass
 
-def space():
-	print("")
+def start_textart():
+    print colored('================================================', 'red', attrs=['bold'])
+    print colored(' ##:::: ##: ##::::::: ####: ##:::: ##: ########:', 'green', attrs=['bold'])
+    print colored('. ##:: ##:: ##:::::::. ##:: ###:: ###: ##.....::', 'green', attrs=['bold'])
+    print colored(':. ## ##::: ##:::::::: ##:: #### ####: ##:::::::', 'green', attrs=['bold'])
+    print colored('::. ###:::: ##:::::::: ##:: ## ### ##: ######:::', 'green', attrs=['bold'])
+    print colored(':: ## ##::: ##:::::::: ##:: ##. #: ##: ##...::::', 'green', attrs=['bold'])
+    print colored(': ##:. ##:: ##:::::::: ##:: ##:.:: ##: ##:::::::', 'green', attrs=['bold'])
+    print colored(' ##:::. ##: ########: ####: ##:::: ##: ########:', 'green', attrs=['bold'])
+    print colored('..:::::..::........::....::..:::::..::........::', 'green', attrs=['bold'])
+    print colored('====================', 'red', attrs=['bold']), colored('X_LIME', 'blue', attrs=['bold']), colored('====================', 'red', attrs=['bold'])
+    print (d_sign + '\033[1;33mSELECT AN OPTION TO BEGIN: \033[1;m')
+    print (a1_sign + x1 + a2_sign + '\033[1;32m Decomplie apk\033[1;m')
+    print (a1_sign + x2 + a2_sign + '\033[1;32m Inject Apk\033[1;m')
+    print (a1_sign + x3 + a2_sign + '\033[1;32m Help\033[1;m')
+    print (a1_sign + x4 + a2_sign + '\033[1;32m Help\033[1;m')
+    print (a1_sign + x5 + a2_sign + '\033[1;32m Help\033[1;m')
+    print (a1_sign + x6 + a2_sign + '\033[1;32m Help\033[1;m')
+    pass
 pass
 
-Loading()
-
+def Loading():
+	with progressbar.ProgressBar(max_value=30) as bar:
+		for i in range(30):
+			time.sleep(0.1)
+			bar.update(i)
+		pass
+	pass
+pass
 cls()
-print colored('================================================', 'red', attrs=['bold'])
-print colored(' ##:::: ##: ##::::::: ####: ##:::: ##: ########:', 'green', attrs=['bold'])
-print colored('. ##:: ##:: ##:::::::. ##:: ###:: ###: ##.....::', 'green', attrs=['bold'])
-print colored(':. ## ##::: ##:::::::: ##:: #### ####: ##:::::::', 'green', attrs=['bold'])
-print colored('::. ###:::: ##:::::::: ##:: ## ### ##: ######:::', 'green', attrs=['bold'])
-print colored(':: ## ##::: ##:::::::: ##:: ##. #: ##: ##...::::', 'green', attrs=['bold'])
-print colored(': ##:. ##:: ##:::::::: ##:: ##:.:: ##: ##:::::::', 'green', attrs=['bold'])
-print colored(' ##:::. ##: ########: ####: ##:::: ##: ########:', 'green', attrs=['bold'])
-print colored('..:::::..::........::....::..:::::..::........::', 'green', attrs=['bold'])
-print colored('====================', 'red', attrs=['bold']), colored('X_LIME', 'blue', attrs=['bold']), colored('====================', 'red', attrs=['bold'])
-print (d_sign + '\033[1;33mSELECT AN OPTION TO BEGIN: \033[1;m')
-print (a1_sign + x1 + a2_sign + '\033[1;32m Decomplie apk\033[1;m')
-print (a1_sign + x2 + a2_sign + '\033[1;32m Inject Apk\033[1;m')
-print (a1_sign + x3 + a2_sign + '\033[1;32m Help\033[1;m')
-print (a1_sign + x4 + a2_sign + '\033[1;32m Help\033[1;m')
-print (a1_sign + x5 + a2_sign + '\033[1;32m Help\033[1;m')
-print (a1_sign + x6 + a2_sign + '\033[1;32m Help\033[1;m')
-
+hacking()
+Loading()
+cls()
+start_textart()
 
 choice_1 = raw_input(d_sign1)
 
@@ -114,17 +124,17 @@ if choice_1 == '1':
 	print colored('▂▂▃▃▄▄▅▅▆▆▇▇██▓▓▒▒░░APK DECOMPILE░░▒▒▓▓██▇▇▆▆▅▅▄▄▃▃▂▂', 'red', attrs=['bold'])
 	space()
 	derp()
-	print(d_sign + apk_directory + c_dir_path)
-	print(d_sign + apk_enter)
+	print('      ' + d_sign + 'OPTIONS' + d_sign)
+	print(d_sign + apk_directory + alone)
+	print(d_sign + choose_directory)
 	apk_file = raw_input(d_sign1)
 	if apk_file.endswith('.apk'):
-		print("yes")
+		os.system('apktool d '+apk_file)
 	else:
 		print (d_sign2), colored('Wrong file format!!!!', 'red', attrs=['reverse', 'bold'])
 
 elif choice_1 == '2':
 	cls()
-	print '2'
 elif choice_1 == '3':
 	cls()
 	print '3'
