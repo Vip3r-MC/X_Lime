@@ -1,6 +1,8 @@
 # X_Lime 0.3
 <li><p1>Python script for kali linux.</p1></li>
 <li><p1>This is Script is still under Construction</p1></li>
+<li><p1>DO NOT USE TERMINATOR, USE TERMINAL</p1></li>
+
 
 <h4>====================Installation===================</h4>                                          
 <ul>
