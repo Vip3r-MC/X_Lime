@@ -4,7 +4,7 @@ import os
 import subprocess
 import shutil
 import sys
-import time 
+import time
 import progressbar
 
 from termcolor import colored
@@ -81,6 +81,12 @@ def derp():
     print("          ──────────────────────────────────")
     print("          ──────────────────────────────────")
 pass
+def terminal_resize1():
+    subprocess.call(['/usr/bin/resize', '-s', '18', '48'])
+pass
+def terminal_resize2():
+    subprocess.call(['/usr/bin/resize', '-s', '9', '78'])
+pass
 
 def start_textart():
     print colored('================================================', 'red', attrs=['bold'])
@@ -111,10 +117,17 @@ def Loading():
 		pass
 	pass
 pass
+
+def terminal_launch():
+    os.system('gnome-terminal --hide-menubar')
+pass
+
 cls()
+terminal_resize2()
 hacking()
-Loading()
+Loading()   
 cls()
+terminal_resize1()
 start_textart()
 
 choice_1 = raw_input(d_sign1)
