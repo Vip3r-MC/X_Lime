@@ -1,6 +1,5 @@
 import os
 os.system('chmod +x xlime_run.py')
-os.system('chmod +x launch_xlime.py')
 
 os.system('apt-get update')
 os.system('apt-get install apktool')
