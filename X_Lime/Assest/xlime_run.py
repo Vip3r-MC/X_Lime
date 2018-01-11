@@ -14,15 +14,17 @@ from pyfiglet import figlet_format
 
 init(strip=not sys.stdout.isatty())
 #Symbols 
-x1 = '\033[1;32m1\033[1;m'
-x2 = '\033[1;32m2\033[1;m'
-x3 = '\033[1;32m3\033[1;m'
-x4 = '\033[1;32m4\033[1;m'
-x5 = '\033[1;32m5\033[1;m'
-x6 = '\033[1;32m6\033[1;m'
+x1 = '\033[1;32m1\033[1;m'#1
+x2 = '\033[1;32m2\033[1;m'#2
+x3 = '\033[1;32m3\033[1;m'#3
+x4 = '\033[1;32m4\033[1;m'#4
+x5 = '\033[1;32m5\033[1;m'#5
+x6 = '\033[1;32m6\033[1;m'#6
+x0 = '\033[1;32m0\033[1;m'#0
 a1_sign = '\033[1;37m[\033[1;m'
 a2_sign = '\033[1;37m]\033[1;m'
 d_sign = '\033[1;37m[\033[1;m''\033[1;32m--\033[1;m''\033[1;37m]\033[1;m'
+d1_sign = '\033[1;37m[\033[1;m''\033[1;32m-\033[1;m''\033[1;37m]\033[1;m'
 d_sign1 = '\033[1;37m: \033[1;m'
 d_sign2 = '\033[1;37m[\033[1;m''\033[1;31mXX\033[1;m''\033[1;37m]\033[1;m'
 
@@ -37,7 +39,8 @@ exampe = colored('/root/Desktop/myapk.apk', 'red', attrs=['bold'])
 clear = lambda: os.system('cls')
 eg = colored('eg:(', 'green', attrs=['bold'])
 eg_2 = colored(')', 'green', attrs=['bold'])
-
+back = colored('Go Back', 'blue', attrs=['bold'])
+myList ='1' '2' '3'
 
 def cls():
 	os.system('cls' if os.name=='nt' else 'clear')
@@ -86,25 +89,25 @@ def derp():
     print("          ──────────────────────────────────")
 pass
 def X():
-    print("    ....▓▓▓▓")
-    print("    ..▓▓......▓")
-    print("    ..▓▓......▓▓..................▓▓▓▓")
-    print("    ..▓▓......▓▓..............▓▓......▓▓▓▓")
-    print("    ..▓▓....▓▓..............▓......▓▓......▓▓")
-    print("    ....▓▓....▓............▓....▓▓....▓▓▓....▓▓")
-    print("    ......▓▓....▓........▓....▓▓..........▓▓....▓")
-    print("    ........▓▓..▓▓....▓▓..▓▓................▓▓")
-    print("    ........▓▓......▓▓....▓▓")
-    print("    .......▓......................▓")
-    print("    .....▓.........................▓")
-    print("    ....▓......^..........^......▓")
-    print("    ....▓............❤............▓")
-    print("    ....▓..........................▓")
-    print("    ......▓..........ٮ..........▓")
-    print("    ..........▓▓..........▓▓")
+    print("........▓▓▓▓.......................................")
+    print("......▓▓......▓....................................")
+    print("......▓▓......▓▓..................▓▓▓▓.............")
+    print("......▓▓......▓▓..............▓▓......▓▓▓▓.........")
+    print("......▓▓....▓▓..............▓......▓▓......▓▓......")
+    print("........▓▓....▓............▓....▓▓....▓▓▓....▓▓....")
+    print("..........▓▓....▓........▓....▓▓..........▓▓...▓...")
+    print("............▓▓..▓▓....▓▓..▓▓................▓▓.....")
+    print("............▓▓......▓▓....▓▓.......................")
+    print("...........▓......................▓................")
+    print(".........▓.........................▓...............")
+    print("........▓......^..........^......▓.................")
+    print("........▓............❤............▓................")
+    print("........▓..........................▓...............")
+    print("..........▓..........ٮ..........▓..................")
+    print("..............▓▓..........▓▓.......................")
 pass
 def terminal_resize1():
-    subprocess.call(['/usr/bin/resize', '-s', '18', '48'])
+    subprocess.call(['/usr/bin/resize', '-s', '15', '48'])
 pass
 def terminal_resize2():
     subprocess.call(['/usr/bin/resize', '-s', '9', '78'])
@@ -115,28 +118,74 @@ def terminal_resize3():
 pass
 
 def terminal_resize4():
-    subprocess.call(['/usr/bin/resize', '-s', '20', '51'])
+    subprocess.call(['/usr/bin/resize', '-s', '21', '51'])
 pass
 
 def start_textart():
-    print colored('================================================', 'red', attrs=['bold'])
-    print colored(' ##:::: ##: ##::::::: ####: ##:::: ##: ########:', 'green', attrs=['bold'])
-    print colored('. ##:: ##:: ##:::::::. ##:: ###:: ###: ##.....::', 'green', attrs=['bold'])
-    print colored(':. ## ##::: ##:::::::: ##:: #### ####: ##:::::::', 'green', attrs=['bold'])
-    print colored('::. ###:::: ##:::::::: ##:: ## ### ##: ######:::', 'green', attrs=['bold'])
-    print colored(':: ## ##::: ##:::::::: ##:: ##. #: ##: ##...::::', 'green', attrs=['bold'])
-    print colored(': ##:. ##:: ##:::::::: ##:: ##:.:: ##: ##:::::::', 'green', attrs=['bold'])
-    print colored(' ##:::. ##: ########: ####: ##:::: ##: ########:', 'green', attrs=['bold'])
-    print colored('..:::::..::........::....::..:::::..::........::', 'green', attrs=['bold'])
-    print colored('====================', 'red', attrs=['bold']), colored('X_LIME', 'blue', attrs=['bold']), colored('====================', 'red', attrs=['bold'])
-    print (d_sign + '\033[1;33mSELECT AN OPTION TO BEGIN: \033[1;m')
-    print (a1_sign + x1 + a2_sign + '\033[1;32m Decomplie apk\033[1;m')
-    print (a1_sign + x2 + a2_sign + '\033[1;32m Apk-2-Jar\033[1;m')
-    print (a1_sign + x3 + a2_sign + '\033[1;32m Help\033[1;m')
-    print (a1_sign + x4 + a2_sign + '\033[1;32m Help\033[1;m')
-    print (a1_sign + x5 + a2_sign + '\033[1;32m Help\033[1;m')
-    print (a1_sign + x6 + a2_sign + '\033[1;32m Help\033[1;m')
-    pass
+    while '1'=='1':
+        cls()
+        terminal_resize1()
+        print colored('================================================', 'red', attrs=['bold'])
+        print colored(' ##:::: ##: ##::::::: ####: ##:::: ##: ########:', 'green', attrs=['bold'])
+        print colored('. ##:: ##:: ##:::::::. ##:: ###:: ###: ##.....::', 'green', attrs=['bold'])
+        print colored(':. ## ##::: ##:::::::: ##:: #### ####: ##:::::::', 'green', attrs=['bold'])
+        print colored('::. ###:::: ##:::::::: ##:: ## ### ##: ######:::', 'green', attrs=['bold'])
+        print colored(':: ## ##::: ##:::::::: ##:: ##. #: ##: ##...::::', 'green', attrs=['bold'])
+        print colored(': ##:. ##:: ##:::::::: ##:: ##:.:: ##: ##:::::::', 'green', attrs=['bold'])
+        print colored(' ##:::. ##: ########: ####: ##:::: ##: ########:', 'green', attrs=['bold'])
+        print colored('..:::::..::........::....::..:::::..::........::', 'green', attrs=['bold'])
+        print colored('====================', 'red', attrs=['bold']), colored('X_LIME', 'blue', attrs=['bold']), colored('====================', 'red', attrs=['bold'])
+        print (d_sign + '\033[1;33mSELECT AN OPTION TO BEGIN: \033[1;m')
+        print (a1_sign + x1 + a2_sign + '\033[1;32m Decomplie apk\033[1;m')
+        print (a1_sign + x2 + a2_sign + '\033[1;32m Apk-2-Jar\033[1;m')
+        print (a1_sign + x3 + a2_sign + '\033[1;32m Exit\033[1;m')
+        choice_1 = raw_input(d_sign1)
+
+        while choice_1 == '1':
+            terminal_resize3()
+            print colored('▂▂▃▃▄▄▅▅▆▆▇▇██▓▓▒▒░░APK DECOMPILE░░▒▒▓▓██▇▇▆▆▅▅▄▄▃▃▂▂', 'red', attrs=['bold'])
+            derp()
+            print('                            ' + d_sign + 'OPTIONS' + d_sign)
+            #print(d_sign + apk_directory + alone)
+            print(d1_sign + choose_directory)
+            print(d1_sign + eg + exampe + eg_2)
+            print (a1_sign + x0 + a2_sign + back)
+            apk_file = raw_input(d_sign1)
+            if apk_file.endswith('.apk'):
+                    os.system('apktool d '+apk_file)
+                    raw_input("Press Enter to continue...")
+            elif apk_file == '0':
+                    start_textart()
+                    pass
+            else:
+                    print (d_sign2), colored('Wrong file format!!!!', 'red', attrs=['reverse', 'bold'])
+                    raw_input("Press Enter to continue...")
+        pass
+    
+        cls()
+        while choice_1 =='2':
+            terminal_resize4()
+            print colored('▂▂▃▃▄▄▅▅▆▆▇▇██▓▓▒▒░░!APK-2-JAR!░░▒▒▓▓██▇▇▆▆▅▅▄▄▃▃▂▂', 'red', attrs=['bold'])
+            X()
+            print(d1_sign + choose_directory)    
+            print(d1_sign + eg + exampe + eg_2)
+            print (a1_sign + x0 + a2_sign + back)
+            apk_file = raw_input(d_sign1)
+            if apk_file.endswith('.apk'):
+                    os.system('d2j-dex2jar ' + apk_file)
+                    raw_input("Press Enter to continue...")
+            elif apk_file == '0':
+                    start_textart()
+                    pass
+            else:
+                print (d_sign2), colored('Wrong file format!!!!', 'red', attrs=['reverse', 'bold'])
+                raw_input("Press Enter to continue...")
+        pass
+        cls()
+        while choice_1 == '3':
+            sys.exit()
+            cls()
+            pass
 pass
 
 def Loading():
@@ -158,33 +207,7 @@ hacking()
 Loading()   
 cls()
 terminal_resize1()
-start_textart()
-
-choice_1 = raw_input(d_sign1)
-terminal_resize3()
-cls()
-while choice_1 == '1':
-	print colored('▂▂▃▃▄▄▅▅▆▆▇▇██▓▓▒▒░░APK DECOMPILE░░▒▒▓▓██▇▇▆▆▅▅▄▄▃▃▂▂', 'red', attrs=['bold'])
-	space()
-	derp()
-	print('                        ' + d_sign + 'OPTIONS' + d_sign)
-	#print(d_sign + apk_directory + alone)
-	print(d_sign + choose_directory)
-        print(d_sign + eg + exampe + eg_2)
-	apk_file = raw_input(d_sign1)
-	if apk_file.endswith('.apk'):
-            os.system('apktool d '+apk_file)
-        else:
-            print (d_sign2), colored('Wrong file format!!!!', 'red', attrs=['reverse', 'bold'])
+while start_textart():
+    terminal_resize3()
+    cls()
 pass
-
-cls()
-while choice_1 =='2':
-    terminal_resize4()
-    print colored('▂▂▃▃▄▄▅▅▆▆▇▇██▓▓▒▒░░!APK-2-JAR!░░▒▒▓▓██▇▇▆▆▅▅▄▄▃▃▂▂', 'red', attrs=['bold'])
-    X()
-    print(d_sign + choose_directory)    
-    print(d_sign + eg + exampe + eg_2)
-    apk_file = raw_input(d_sign1)
-    os.system('d2j-dex2jar ' + apk_file)
-    pass
