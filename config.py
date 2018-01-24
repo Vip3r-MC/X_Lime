@@ -1,6 +1,5 @@
 import os
 os.system('chmod +x X_Lime/launch_xlime.py')
-os.system('chmod +x X_Lime/Assest/xlime_run.py')
 
 os.system('apt-get install apktool')
 os.system('sudo apt-get install python-termcolor')
