@@ -1,4 +1,4 @@
-# X_Lime 0.6
+# X_Lime 0.7
 Python script for kali linux.
 This Script is still under Construction
 DO NOT USE TERMINATOR, USE TERMINAL!!!!
