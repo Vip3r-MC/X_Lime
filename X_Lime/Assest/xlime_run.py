@@ -15,6 +15,7 @@ from pyfiglet import figlet_format
 from Resource.Banners import *
 from Resource.DIR import *
 from Resource.terminal import *
+from Resource.ip_geolocator import *    
 
 init(strip=not sys.stdout.isatty())
 
@@ -24,6 +25,8 @@ cls()
 del_cls()
 hacking()
 cls()
+
+
 
 def start_textart():
     while '1'=='1':
@@ -147,12 +150,34 @@ def start_textart():
                 raw_input("Press Enter to continue...")
         pass
 
+
         cls()
         while choice_1 == '4':
+            terminal_resize10()
+            print colored('|---=IP Geolocation Tool=---|', 'red', attrs=['bold'])
+            penguin()
+            print(d1_sign + IP_E)
+            print (a1_sign + x0 + a2_sign + back)
+            IP = raw_input(d_sign1)
+            if IP == '0':
+                start_textart()
+            elif IP in aplha_1 or aplha_2:
+                os.system('python Assest/Resource/ip_geolocator.py --url ' + IP)
+                terminal_resize11()
+            elif IP in num:
+                os.system('python Assest/Resource/ip_geolocator.py -t ' + IP)
+                terminal_resize11()
+            else:
+                print (d_sign2), colored('UNKNOWN ERROR', 'red', attrs=['reverse', 'bold'])
+            raw_input("Press Enter to continue...")
+        pass
+
+        cls()
+        while choice_1 == '5':
             terminal_resize9()
             cls()
             sys.exit()
-            pass
+        pass
 pass
 
 def Loading():
