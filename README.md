@@ -1,16 +1,15 @@
-# X_Lime 0.8.3
+# X_Lime 0.8
 Python script for kali linux.
+This Script is still under Construction
 DO NOT USE TERMINATOR, USE TERMINAL!!!!
 
 
         ====================Installation===================                                      
 
-  1.Enter the directory to where X_Lime is; eg cd Desktop/X_Lime
+  First enter the directory to where X_Lime is;eg cd Desktop/X_Lime
   
-  2.Install the python requirements:pip install -r requirements.txt
+  Second run config.py;eg python config.py
   
-  3.Run config.py: python config.py
-  
-  4.You are done installing the python script to run: ./launch_xlime.py
+  Third you are done installing the python script to run; ./launch_xlime.py
 
 send feedback on gmail:vipercipher0@gmail.com
