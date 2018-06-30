@@ -25,11 +25,11 @@ def terminal_resize8():
     subprocess.call(['/usr/bin/resize', '-s', '14', '38'], stdout=open(os.devnull, 'wb'))
     pass
 def terminal_resize9():
-    subprocess.call(['/usr/bin/resize', '-s', '24', '80'], stdout=open(os.devnull, 'wb'))
-    pass
-def terminal_resize10():
     subprocess.call(['/usr/bin/resize', '-s', '20', '30'], stdout=open(os.devnull, 'wb'))
     pass
-def terminal_resize11():
+def terminal_resize10():
     subprocess.call(['/usr/bin/resize', '-s', '20', '53'], stdout=open(os.devnull, 'wb'))
+    pass
+def terminal_return():
+    subprocess.call(['/usr/bin/resize', '-s', '24', '80'], stdout=open(os.devnull, 'wb'))
     pass

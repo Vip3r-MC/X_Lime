@@ -59,3 +59,14 @@ pass
 def del_cls():
 	os.system('find Assest -name *.pyc -delete')
 pass
+
+def quantom():
+    try:
+        os.system('apktool d '+apk_file)
+        raw_input("Press Enter to continue...")
+    except KeyboardInterrupt:
+        print raw_input(colored("Press Enter to Exit", 'green', attrs=['bold']))
+        terminal_return()
+        cls()
+        sys.exit(0)
+    pass

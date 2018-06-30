@@ -1,6 +1,5 @@
 # X_Lime 0.8
-# THE CURRENT VERSION IS BEING FIXED
-Python script for kali linux not !!UBUNTO.
+Python script for kali linux.
 This Script is still under Construction
 DO NOT USE TERMINATOR, USE TERMINAL!!!!
 
