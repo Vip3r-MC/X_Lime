@@ -5,7 +5,6 @@ import shutil
 import sys
 import time
 import progressbar
-import time
 import shutil
 
 from termcolor import cprint
