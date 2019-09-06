@@ -15,4 +15,4 @@ DO NOT USE TERMINATOR, USE TERMINAL!!!!
 
 send feedback on gmail:vipercipher0@gmail.com
 
-#Coming in 1 week v1
+**Update Incoming very very soon**
