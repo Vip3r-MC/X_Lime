@@ -4,7 +4,7 @@
   <a href="https://github.com/Vip3r-MC/X_Lime/blob/master/LICENSE.md" target="_blank">
     <img alt="License: GPL--3.0" src="https://img.shields.io/badge/License-GPL--3.0-yellow.svg" />
   </a>
-  <a href="https://twitter.com/mc\_vip3r" target="_blank">
+  <a href="https://twitter.com/mc_vip3r" target="_blank">
     <img alt="Twitter: mc\_vip3r" src="https://img.shields.io/twitter/follow/mc\_vip3r.svg?style=social" />
   </a>
 </p>
@@ -52,6 +52,3 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2020 [Vip3r](https://github.com/Vip3r-MC).<br />
 This project is [GPL--3.0](https://github.com/Vip3r-MC/X_Lime/blob/master/LICENSE.md) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
