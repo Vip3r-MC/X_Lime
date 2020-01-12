@@ -1,0 +1,7 @@
+setuptools
+pyfiglet
+termcolor
+colorama
+progressbar2
+pygeoip
+readline
