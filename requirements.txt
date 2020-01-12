@@ -1,6 +1,0 @@
-pyfiglet
-termcolor
-colorama
-progressbar2
-readline
-pygeoip
