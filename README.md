@@ -18,6 +18,7 @@
 ```sh
 sudo pip install -r requirements.txt
 sudo python config.py
+sudo chmod +x xlime.py
 ```
 
 ## Usage
