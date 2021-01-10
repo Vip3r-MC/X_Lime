@@ -1,4 +1,4 @@
-<h1 align="center"> <X_Lime/></h1>
+<h1 align="center"> X_Lime </h1>
 <p align="center">
   <a href="https://github.com/Vip3r-MC/X_Lime/releases/tag/0.8.5"><img alt="Version" src="https://img.shields.io/badge/version-0.8.5-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/Vip3r-MC/X_Lime/blob/master/LICENSE.md" target="_blank">
