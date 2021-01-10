@@ -35,14 +35,6 @@ sudo chmod +x xlime.py
 * Twitter: [@mc\_vip3r](https://twitter.com/mc\_vip3r)
 * Github: [@Vip3r-MC](https://github.com/Vip3r-MC)
 
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Vip3r-MC/X_Lime/issues). 
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
 ## 📝 License
 
 Copyright © 2020 [Vip3r](https://github.com/Vip3r-MC).<br />
