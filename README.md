@@ -34,7 +34,6 @@ sudo chmod +x xlime.py
 * Website: https://gitconnected.com/vip3r
 * Twitter: [@mc\_vip3r](https://twitter.com/mc\_vip3r)
 * Github: [@Vip3r-MC](https://github.com/Vip3r-MC)
-* LinkedIn: [@michael-chesang](https://linkedin.com/in/michael-chesang)
 
 ## 🤝 Contributing
 
